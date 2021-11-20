@@ -1,0 +1,113 @@
+.library_view {
+  backface-visibility: hidden;
+  margin-top: 5rem;
+  height: 100vh;
+  width: 90vw;
+  background-image: linear-gradient(
+      to left top,
+      rgba(223, 223, 223, 0.411),
+      rgba(0, 1, 17, 0.924)
+    ),
+    url(../../../assets/about.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.library_title {
+  font-size:3rem;
+  border: 3px solid white;
+  padding: 0.75rem 1.5rem;
+  position: absolute;
+  top: -2%;
+  left: 5%;
+  letter-spacing:3px;
+   background-image: linear-gradient(
+    to left top,
+    rgba(223, 223, 223, 0.24),
+    rgba(0, 1, 17, 0.918)
+  );
+  border-radius: 15px;
+ 
+}
+
+.album_view {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+.album_view li {
+  border-radius: 6px;
+  height: 25%;
+  width: 25%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  text-align: center;
+  margin: 2.5rem;
+  /* border-radius:45%; */
+  background: #dfdfdf3f;
+  background-image: linear-gradient(
+    to left top,
+    rgba(223, 223, 223, 0.6),
+    rgba(0, 1, 17, 0.81)
+  );
+  position: relative;
+}
+.album_view li h3 {
+  position: absolute;
+  top: 70%;
+  padding: 0.5rem;
+}
+.album_view img {
+  width: 50%;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  top: -30%;
+  /* border-radius:50%; */
+  /* z-index: 50000; */
+}
+/* div  {
+  position:relative;
+} */
+
+.album_view button {
+  width: 50%;
+  padding: 0.75rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.808);
+  border:3px solid rgba(223, 223, 223, 0.24);
+}
+.album_view button:hover {
+  width: 75%;
+  box-shadow: 10px 10px 5px 0px rgba(34, 34, 51, 0.95);
+  /* padding:0.5rem; */
+  /* border-bottom: 1px solid var(--fnt-clr);  */
+    background-image: linear-gradient(
+    to left top,
+    rgba(223, 223, 223, 0.24),
+    rgba(0, 1, 17, 0.945)
+  );
+  color: whitesmoke;
+  font-size: 1.4rem;
+}

@@ -1,0 +1,96 @@
+.login_view {
+     backface-visibility: hidden;
+     /* border:3px solid white; */
+  margin-top: 5rem;
+  height: 85vh;
+  width: 90vw;
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 1, 17, 0.6),
+    rgba(0, 1, 17, 0.61)
+  );
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /*
+  $prussian-blue: rgba(0, 41, 73, 1);
+$gainsboro: rgba(223, 223, 223, 1);
+$rich-black-fogra-29: rgba(0, 1, 17, 1);
+$sonic-silver: rgba(115, 115, 115, 1);
+  */
+  /* background: linear-gradient(45deg, #49a09d, #5f2c82, #49a09d, #5f2c82);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite; */
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  position: relative;
+}
+.login_modal {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  background-size: cover;
+  padding: 1rem;
+  text-align: center;
+  width: 30%;
+  height: 60vh;
+  z-index: 10;
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* left: calc(50% - 15rem); */
+  background: #dfdfdf3f;
+  background-image: linear-gradient(
+    to left top,
+    rgba(223, 223, 223, 0.6),
+    rgba(0, 1, 17, 0.81)
+  );
+  color: var(--fnt-clr);
+  border-radius: 15px;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  width: 40vw;
+  height: 40vh;
+  border: 3px solid white;
+}
+.form-input {
+    letter-spacing:5px;
+  margin-right: 10px;
+  width: 75%;
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  margin: 0.5rem;
+  padding: 0.75rem; 
+  font-size: 1.2rem;
+  color: #002949;
+    border-radius:15px;
+
+  /* background-color: black; */
+}
+.form-input::placeholder {
+  color: #002949;
+  text-align: center;
+}
+.form-button {
+  width: 40%;
+  height: 4rem;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background-color: #002949;
+  color: whitesmoke;
+  border-radius:15px;
+}

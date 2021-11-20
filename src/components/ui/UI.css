@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Open+Sans:wght@400;600;700;900&display=swap");
+
+:root {
+  --label-clr: #85bf04ff;
+  --highlight-green: #436206ff;
+  --bkg-clr: #030303ff;
+  --fnt-clr: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    backface-visibility: hidden;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--fnt-clr);
+  /* background-color:var(--fnt-clr); */
+  background-image:linear-gradient(
+      to left top,
+      rgba(223, 223, 223, 0.6),
+      rgba(0, 1, 17, 0.81));
+  padding: 2rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* position: relative; */
+ height:100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+ background-color: black;
+}
+
+.section_view{
+/* box-shadow: 0px 0px 69px 1px rgba(133,191,4,0.75); */
+margin-top:5rem;
+ height: 85vh; /*means at any point the height of this element occupies 95% of the viewport/"window" */
+ width:90vw;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 1, 17, 0.6),
+      rgba(0, 1, 17, 0.61)
+    );
+  /*to style a background-gradient we use the background-image property, we declare the gradient before declaring the background image*/
+  background-size: cover;
+  /* background-repeat: repeat; */
+  /*this ensures that the image fits the entire width of the box/element */
+  /* background-position: top; */
+  position: relative;
+  /*this ensures that no matter how wide the screen is, the top of the image will always appear on top, cropped for other sides*/
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+position: relative;
+/* border: 3px solid white; */
+
+}
