@@ -50,7 +50,7 @@ background-color:inherit;
     box-shadow: 10px 10px 5px 0px rgba(34,34,51,0.95);
   padding:0.5rem;
   border-bottom: 1px solid var(--fnt-clr); 
- background-color: #002949;
+ background-color: rgb(0, 41, 73);
   font-weight:500;
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;

@@ -20,8 +20,7 @@ const Library = () => {
    
     }
   }
-  console.log()
-  // albumImage()
+
  
   const deleteHandler = () => {
     setModal(true);
@@ -40,6 +39,7 @@ const Library = () => {
       </div>
     </li>
   ));
+  
 
   return (
     

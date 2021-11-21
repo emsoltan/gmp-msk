@@ -7,6 +7,7 @@ const MyProvider = (props) => {
   const PASSWORD = process.env.REACT_APP_PASSWORD;
   const [form, setForm] = useState({ user: "", password: "" });
   const [auth, setAuth] = useState(false);
+ 
   const handleFormInput = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };

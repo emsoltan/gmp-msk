@@ -1,0 +1,17 @@
+.cart_view {
+  margin-top: 5rem;
+  height: 85vh;
+  width: 90vw;
+  background-image: linear-gradient(
+    to left top,
+    rgba(223, 223, 223, 0.6),
+    rgba(0, 1, 17, 0.81)
+  );
+
+  background-size: cover;
+
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  position: relative;
+}
