@@ -29,7 +29,7 @@ const About = () => {
           </p>
         </div>
         <div className="emphasis_container">
-          <ul class="emphasis">
+          <ul className="emphasis">
             <li className="pulse">Hip Hop</li>
             <li className="pulse">Drum n bass</li>
             <li className="pulse">Boom Bap</li>

@@ -1,22 +1,22 @@
-.modal {
+/* .contact_modal {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  /* background-color: white; */
+  background-color: white;
 
   background-size: cover;
   padding: 1rem;
   text-align: center;
   width: 30%;
-  height: 95%;
+  height: 60vh;
   z-index: 10;
   position: absolute;
-  /* border: 3px solid white; */
+  border: 3px solid white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* top: 20vh; */
-  /* left: calc(50% - 15rem); */
+  top: 20vh;
+  left: calc(50% - 15rem);
   background: #dfdfdf3f;
   background-image: linear-gradient(
     to left top,
@@ -25,26 +25,21 @@
   );
   color: var(--fnt-clr);
   border-radius: 15px;
-}
+  z-index: 5000;
+} */
 
-.modal li {
-  /* background:#1d1c1c7c; */
+/* .contact_modal li {
+  background:#1d1c1c7c;
   list-style: none;
   font-size: 1.3em;
   font-weight: 400;
   padding: 0.5rem;
-
-  /* border:1px solid #DFDFDF */
-}
-.modal button {
+  border:1px solid #DFDFDF
+} */
+/* .contact_modal button {
   width: 75%;
   height: 3rem;
   font-size: 1.2rem;
   margin: 0.15rem;
   border-radius: 15px;
-}
-
-.modal li a {
-  text-decoration: none;
-  color: var(--fnt-clr);
-}
+} */

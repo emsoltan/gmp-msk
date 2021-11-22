@@ -1,4 +1,4 @@
-.modal {
+.contact_modal {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   /* background-color: white; */
@@ -42,9 +42,4 @@
   font-size: 1.2rem;
   margin: 0.15rem;
   border-radius: 15px;
-}
-
-.modal li a {
-  text-decoration: none;
-  color: var(--fnt-clr);
 }
