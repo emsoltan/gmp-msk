@@ -24,7 +24,7 @@ const Modal = (props) => {
   return (
     <div className="modal">
       <ul>{albumTracks}</ul>
-      <button>
+      <button onClick={()=>addToCart()}>
         <a>Add to Cart</a>
         {/* <Link to={url} key={id}></Link> */}
       </button>

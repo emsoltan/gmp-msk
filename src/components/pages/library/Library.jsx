@@ -8,9 +8,9 @@ const Library = () => {
   const context = useContext(MyContext);
   const { siteData, addToCart, cartItems } = context;
   const [modal, setModal] = useState(false);
-  const album = siteData[0].releases;
-  const albumArt = siteData[0].albumArt;
-  const releases = siteData[0].releases;
+  // const album = siteData[0].releases;
+  // const albumArt = siteData[0].albumArt;
+  // const releases = siteData[0].releases;
 
   const deleteHandler = () => {
     setModal(true);
@@ -22,9 +22,9 @@ const Library = () => {
     <li key={index}>
       <img src={album.image} />
       <h3>{album.albumName}</h3>
-      <div className="actions">
+      <div className="buttons">
         <button className="view-btn" onClick={deleteHandler}>
-          Check Tracks
+          View Tracks
         </button>
         <button className="add-btn" onClick={() => addToCart(album)}>
           Add To Cart
