@@ -6,11 +6,9 @@ import Backdrop from "../../ui/Backdrop";
 import "./Library.css";
 const Library = () => {
   const context = useContext(MyContext);
-  const { siteData, addToCart, cartItems } = context;
+  const { siteData, addToCart } = context;
   const [modal, setModal] = useState(false);
-  // const album = siteData[0].releases;
-  // const albumArt = siteData[0].albumArt;
-  // const releases = siteData[0].releases;
+ 
 
   const deleteHandler = () => {
     setModal(true);
@@ -18,10 +16,13 @@ const Library = () => {
   const closeModalHandler = () => {
     setModal(false);
   };
+  
   const getAlbum = siteData[0].releases.map((album, index) => (
     <li key={index}>
-      <img src={album.image} />
+      <img src={album.image} alt="albumImage" />
       <h3>{album.albumName}</h3>
+     
+
       <div className="buttons">
         <button className="view-btn" onClick={deleteHandler}>
           View Tracks

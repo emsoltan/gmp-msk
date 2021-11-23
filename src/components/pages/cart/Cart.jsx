@@ -1,8 +1,6 @@
-import React, { useEffect, useState, useContext } from "react";
-import { useNavigate } from "react-router-dom";
-import LoginCheck from "../account/loginform/LoginCheck";
+import React, { useContext } from "react";
+
 import MyContext from "../../../context/MyContext";
-import Library from "../library/Library";
 
 import "./Cart.css";
 
@@ -19,30 +17,39 @@ const Cart = () => {
           cartItems.map((album, index) => (
             <div key={index} className="cart-item">
               <div>{album.quantity}</div>
-              <img src={album.image} alt="" />
+              <img src={album.image} alt="albumImage" />
               <h3>{album.albumName}</h3>
               <div className="cart-buttons">
                 <button className="option" onClick={() => addToCart(album)}>
-                  <img src="https://img.icons8.com/material/24/000000/add.png" />
+                  <img
+                    src="https://img.icons8.com/material/24/000000/add.png"
+                    alt="btn-icon"
+                  />
                 </button>
                 <button
                   className="option"
                   onClick={() => decreaseQuantity(album)}
                 >
-                  <img src="https://img.icons8.com/ios-filled/50/000000/minus.png" />
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/000000/minus.png"
+                    alt="btn-icon"
+                  />
                 </button>
                 <button className="option" onClick={() => deleteItem(album)}>
-                  <img src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-delete-miscellaneous-kiranshastry-solid-kiranshastry.png" />
+                  <img
+                    src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/000000/external-delete-miscellaneous-kiranshastry-solid-kiranshastry.png"
+                    alt="btn-icon"
+                  />
                 </button>
               </div>
-              <div>{album.price * album.quantity} $</div>
+              <div>{album.price * album.quantity} €</div>
             </div>
           ))
         )}
       </div>
       <div className="final">
         <div className="total">
-          <h3> Total : {calcTotal(cartItems).toFixed(2)} $</h3>
+          <h3> Total : {calcTotal(cartItems).toFixed(2)} €</h3>
         </div>{" "}
         {cartItems.length > 0 && (
           <button className="checkout">

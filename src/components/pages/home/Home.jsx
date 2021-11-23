@@ -1,16 +1,14 @@
-import React , {useEffect, useContext} from "react";
+import React from "react";
 // import classes from "../../ui/UI.module.css";
 import  "../../ui/UI.css"
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Library from "../../pages/library/Library"
 import About from "../../pages/about/About"
-import Account from "../../pages/account/Account"
-import MyContext from "../../../context/MyContext"
+
+
 import  "./Home.css"
 const Home = () => {
-  const context = useContext(MyContext)
-  // const navigate = useNavigate()
-  // const {auth }= context
+
 
   return (
     <>

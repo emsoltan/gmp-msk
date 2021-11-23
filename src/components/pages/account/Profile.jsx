@@ -1,17 +1,14 @@
-import React, { useContext, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useContext } from "react";
 import MyContext from "../../../context/MyContext";
-import LoginForm from "./loginform/LoginForm";
+
 import moss from "../../../assets/moss.jpg";
 import "./Profile.css";
 
 const Profile = () => {
   const context = useContext(MyContext);
-  const { handleFormSubmit, auth } = context;
-  const navigate = useNavigate();
-  // useEffect(() => {
-  //   !auth && navigate("/", { replace: true });
-  // }, [auth, navigate]);
+  const { handleFormSubmit } = context;
+
+
   return (
     <div className="profile-view">
       <h1 className="profile-title">Profile</h1>
